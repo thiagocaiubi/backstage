@@ -23,7 +23,7 @@ import React, {
   useMemo,
   useState,
 } from 'react';
-import { Route, Routes } from 'react-router-dom';
+import { createRoutesFromChildren, Route, Routes } from 'react-router-dom';
 import { useAsync } from 'react-use';
 import {
   ApiProvider,
@@ -63,6 +63,7 @@ import {
   routePathCollector,
 } from '../routing/collectors';
 import { RoutingProvider } from '../routing/RoutingProvider';
+import { RouteTracker } from '../routing/RouteTracker';
 import { validateRoutes } from '../routing/validation';
 import { AppContextProvider } from './AppContext';
 import { AppIdentity } from './AppIdentity';
@@ -365,6 +366,7 @@ export class PrivateAppImpl implements BackstageApp {
 
         return (
           <RouterComponent>
+            <RouteTracker objects={createRoutesFromChildren(children)} />
             <Routes>
               <Route path={mountPath} element={<>{children}</>} />
             </Routes>
@@ -374,6 +376,7 @@ export class PrivateAppImpl implements BackstageApp {
 
       return (
         <RouterComponent>
+          <RouteTracker objects={createRoutesFromChildren(children)} />
           <SignInPageWrapper component={SignInPageComponent}>
             <Routes>
               <Route path={mountPath} element={<>{children}</>} />
