@@ -38,11 +38,7 @@ export type AlertMessage = {
 //
 // @public
 export type AnalyticsApi = {
-  getDecoratedTracker({
-    domain,
-  }: {
-    domain: AnalyticsDomainValue;
-  }): AnalyticsTracker;
+  captureEvent(event: DomainDecoratedAnalyticsEvent): void;
 };
 
 // Warning: (ae-missing-release-tag) "analyticsApiRef" is exported by the package, but it is missing a release tag (@alpha, @beta, @public, or @internal)
@@ -350,7 +346,7 @@ export function createApiRef<T>(config: ApiRefConfig): ApiRef<T>;
 //
 // @public (undocumented)
 export function createComponentExtension<
-  T extends (props: any) => JSX.Element | null
+  T extends (props: any) => JSX.Element | null,
 >(options: { component: ComponentLoader<T>; name?: string }): Extension<T>;
 
 // Warning: (ae-forgotten-export) The symbol "OptionalParams" needs to be exported by the entry point index.d.ts
@@ -394,7 +390,7 @@ export function createReactExtension<
 //
 // @public (undocumented)
 export function createRoutableExtension<
-  T extends (props: any) => JSX.Element | null
+  T extends (props: any) => JSX.Element | null,
 >(options: {
   component: () => Promise<T>;
   mountPoint: RouteRef;
