@@ -1,5 +1,5 @@
 /*
- * Copyright 2020 The Backstage Authors
+ * Copyright 2021 The Backstage Authors
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,26 +14,13 @@
  * limitations under the License.
  */
 
-import {
-  createPlugin,
-  createRoutableExtension,
-  createRouteRef,
-} from '@backstage/core-plugin-api';
+import React from 'react';
 
-export const rootRouteRef = createRouteRef({
-  title: 'Welcome',
-});
-
-export const welcomePlugin = createPlugin({
-  id: 'welcome',
-  register({ featureFlags }) {
-    featureFlags.register('enable-welcome-box');
-  },
-});
-
-export const WelcomePage = welcomePlugin.provide(
-  createRoutableExtension({
-    component: () => import('./components/Experiment').then(m => m.Experiment),
-    mountPoint: rootRouteRef,
-  }),
-);
+export function Experiment6() {
+  return (
+    <div>
+      <h1>Experiment 6</h1>
+      <p>This is an experiment.</p>
+    </div>
+  );
+}
