@@ -1,5 +1,15 @@
 # @backstage/plugin-kubernetes-backend
 
+## 0.3.16
+
+### Patch Changes
+
+- febddedcb2: Bump `lodash` to remediate `SNYK-JS-LODASH-590103` security vulnerability
+- Updated dependencies
+  - @backstage/backend-common@0.9.4
+  - @backstage/catalog-model@0.9.3
+  - @backstage/config@0.1.10
+
 ## 0.3.15
 
 ### Patch Changes

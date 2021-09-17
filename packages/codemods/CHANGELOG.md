@@ -1,5 +1,12 @@
 # @backstage/codemods
 
+## 0.1.15
+
+### Patch Changes
+
+- Updated dependencies
+  - @backstage/core-components@0.4.3
+
 ## 0.1.14
 
 ### Patch Changes

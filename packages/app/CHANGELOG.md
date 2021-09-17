@@ -1,5 +1,20 @@
 # example-app
 
+## 0.2.47
+
+### Patch Changes
+
+- Updated dependencies
+  - @backstage/plugin-catalog-import@0.6.0
+  - @backstage/plugin-circleci@0.2.24
+  - @backstage/plugin-api-docs@0.6.9
+  - @backstage/plugin-catalog-react@0.4.7
+  - @backstage/catalog-model@0.9.3
+  - @backstage/cli@0.7.13
+  - @backstage/core-components@0.4.3
+  - @backstage/plugin-rollbar@0.3.15
+  - @backstage/plugin-techdocs@0.11.3
+
 ## 0.2.46
 
 ### Patch Changes

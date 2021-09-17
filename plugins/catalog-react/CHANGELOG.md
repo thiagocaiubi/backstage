@@ -1,5 +1,15 @@
 # @backstage/plugin-catalog-react
 
+## 0.4.7
+
+### Patch Changes
+
+- cc464a56b3: This makes Type and Lifecycle columns consistent for all table cases and adds a new line in Description column for better readability
+- febddedcb2: Bump `lodash` to remediate `SNYK-JS-LODASH-590103` security vulnerability
+- Updated dependencies
+  - @backstage/catalog-model@0.9.3
+  - @backstage/core-components@0.4.3
+
 ## 0.4.6
 
 ### Patch Changes

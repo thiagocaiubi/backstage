@@ -1,5 +1,15 @@
 # @backstage/plugin-rollbar
 
+## 0.3.15
+
+### Patch Changes
+
+- febddedcb2: Bump `lodash` to remediate `SNYK-JS-LODASH-590103` security vulnerability
+- Updated dependencies
+  - @backstage/plugin-catalog-react@0.4.7
+  - @backstage/catalog-model@0.9.3
+  - @backstage/core-components@0.4.3
+
 ## 0.3.14
 
 ### Patch Changes

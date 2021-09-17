@@ -1,5 +1,15 @@
 # @backstage/plugin-api-docs
 
+## 0.6.9
+
+### Patch Changes
+
+- cc464a56b3: This makes Type and Lifecycle columns consistent for all table cases and adds a new line in Description column for better readability
+- Updated dependencies
+  - @backstage/plugin-catalog-react@0.4.7
+  - @backstage/catalog-model@0.9.3
+  - @backstage/core-components@0.4.3
+
 ## 0.6.8
 
 ### Patch Changes

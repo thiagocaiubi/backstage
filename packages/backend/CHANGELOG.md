@@ -1,5 +1,20 @@
 # example-backend
 
+## 0.2.47
+
+### Patch Changes
+
+- Updated dependencies
+  - @backstage/plugin-catalog-backend@0.14.0
+  - @backstage/backend-common@0.9.4
+  - @backstage/catalog-model@0.9.3
+  - @backstage/config@0.1.10
+  - @backstage/plugin-kafka-backend@0.2.10
+  - @backstage/plugin-kubernetes-backend@0.3.16
+  - @backstage/plugin-rollbar-backend@0.1.15
+  - @backstage/plugin-search-backend-module-pg@0.2.1
+  - example-app@0.2.47
+
 ## 0.2.46
 
 ### Patch Changes
